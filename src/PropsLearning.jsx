@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function PropsLearning(props){
     return (
@@ -8,6 +9,14 @@ function PropsLearning(props){
         
         </div>
     );
+
 }
+
+PropsLearning.prototype = {
+
+    name: PropTypes.string,
+    age: PropTypes.number   
+}
+
 
 export default PropsLearning;
